@@ -32,7 +32,7 @@ def fetch_page_title(url):
     except requests.exceptions.RequestException as e:
         return f"Error fetching page: {e}"
 
-# Test the phishing detection function
+# Test the phishing detection function with suspicious URLs
 url = "https://www.linkedin.com/pulse/how-simplify-your-linkedin-url-brenda-meller-zawacki--1/"
 if is_phishing(url):
     print(f"Phishing detected: {url}")
